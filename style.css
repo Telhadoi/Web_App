@@ -9,6 +9,7 @@ body{
 }
 
 #main{
+    width: 100%;
     text-align: center;
 }
 
@@ -42,6 +43,7 @@ button:hover{
 form{
     text-align: center;
     display: none;
+    flex-direction: column;
 }
 
 form input{
