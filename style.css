@@ -1,18 +1,21 @@
 body{
-    background-image: url('./1666154876_3-3.jpg');
+    /* background-image: url('./1666154876_3-3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
     height: 1200px;
     display: flex;
     flex-direction: column  ;
     align-items: center;
+    font-weight: 200;
+    color: var(--tg-theme-text-color);
+    background: var(--tg-theme-bg-color);
 }
 
 #main h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
-    font-size: 70px;
+    font-size: 40px;
 }
 
 #main p{
@@ -26,16 +29,20 @@ body{
     border-radius: 20px;
 }
 
-#main button{
+button{
     padding: 5px 40px;
     margin-bottom: 10px;
-    background-color: teal;
     font-weight: 900;
+    color: var(--tg-theme-button-color);
+    background-color: var(--tg-theme-button-text-color);
+}
+
+button:hover{
+    background: var(--tg-theme-secondary-bg-color);
 }
 
 form{
-    display: flex;
-    flex-direction: column;
+    display: none;
 }
 
 form input{
@@ -43,5 +50,11 @@ form input{
     margin: 2px;
     background-color: gold;
     color: black;
+    font-weight: 900;
+}
+
+form button{
+    padding: 5px 40px;
+    margin-top: 10px;
     font-weight: 900;
 }
