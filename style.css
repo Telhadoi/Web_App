@@ -8,6 +8,10 @@ body{
     background: var(--tg-theme-bg-color);
 }
 
+#main{
+    text-align: center;
+}
+
 #main h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 40px;
@@ -36,6 +40,7 @@ button:hover{
 }
 
 form{
+    text-align: center;
     display: none;
 }
 
