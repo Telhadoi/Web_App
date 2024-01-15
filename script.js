@@ -10,6 +10,7 @@ buy.addEventListener('click' , () =>{
 })
 
 order.addEventListener('click', () => {
+    document.getElementById('error').innerText = '';
     let name = document.getElementById('user_name').value;
     let email = document.getElementById('user_email').value;
     let phone = document.getElementById('user_phone').value;
@@ -28,6 +29,17 @@ order.addEventListener('click', () => {
         document.getElementById('error').innerText = 'Ошибка в номере';
         return;
     }
+
+
+    let data  = {
+        name: name,
+        email: email,
+        phone: phone
+    }
+
+    tg.setData(JSON.stringify(data))
+
+    tg.close();
 
 })
 
