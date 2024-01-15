@@ -10,10 +10,9 @@ buy.addEventListener('click' , () =>{
 })
 
 order.addEventListener('click', () => {
-    document.getElementById('error').innerHTML = '';
     let name = document.getElementById('user_name').value;
-    let email = document.getElementById('email').value;
-    let phone = document.getElementById('phone').value;
+    let email = document.getElementById('user_email').value;
+    let phone = document.getElementById('user_phone').value;
 
     if (name.length <2){
         document.getElementById('error').innerText = 'Ошибка в имени';
@@ -25,7 +24,7 @@ order.addEventListener('click', () => {
         return;
     }
 
-    if (phone.length , 5){
+    if (phone.length < 5){
         document.getElementById('error').innerText = 'Ошибка в номере';
         return;
     }
