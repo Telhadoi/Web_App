@@ -37,7 +37,7 @@ order.addEventListener('click', () => {
         phone: phone
     }
 
-    tg.setData(JSON.stringify(data))
+    tg.sendData(JSON.stringify(data))
     tg.close();
 })
 
